@@ -12,7 +12,7 @@
 
   # Automatically upgrade the channel
   system.autoUpgrade.enable = true;
-  system.autoUpgrade.allowReboot = true;
+  system.autoUpgrade.allowReboot = false;
 
   networking.hostName = "tedjreimer"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
