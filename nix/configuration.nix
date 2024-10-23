@@ -44,8 +44,8 @@
 
   # Configure keymap in X11
   services.xserver = {
-    layout = "us";
-    xkbVariant = "";
+    xkb.layout = "us";
+    xkb.variant = "";
   };
 
   # Enable CUPS to print documents.
@@ -141,7 +141,9 @@
     slurp # screenshot functionality
     gimp # photo (screenshot) editing
     waybar # Bar for wayland
+    slstatus
     # Programming languages
+    gcc # C and C++
     lua # For nvim
     lua-language-server
     python3
@@ -199,13 +201,25 @@
 
     displayManager.startx.enable = true;
 
-    windowManager.i3 = {
-        enable = true;
-        extraPackages = with pkgs; [
-          i3status
-        ];
+    #windowManager.i3 = {
+    #    enable = true;
+    #    extraPackages = with pkgs; [
+    #      i3status
+    #    ];
+    #};
+    windowManager.dwm.enable = true;
+    windowManager.dwm.package = pkgs.dwm.overrideAttrs {
+        src = /home/ted/.tedsconfigs/tedwm;
     };
   };
+
+  nixpkgs.overlays = [
+    (final: prev: {
+      slstatus = prev.slstatus.overrideAttrs (old: {
+        src = /home/ted/.tedsconfigs/slstatus;
+      });
+    })
+  ];
 
    # Enable the gnome-keyring secrets vault.
   # Will be exposed through DBus to programs willing to store secrets.

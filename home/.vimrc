@@ -71,6 +71,9 @@ autocmd FileType vim setlocal foldmethod=marker
 " za to toggle, zo to open, zc to close. zM/zR to close/open all folds
 set foldcolumn=2
 
+" compile LaTeX
+autocmd BufWritePost *.tex silent! execute "!pdflatex % " | redraw!
+
 " }}}
 
 " STATUS LINE {{{
