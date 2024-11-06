@@ -66,7 +66,7 @@ static const char unknown_str[] = "n/a";
 static const struct arg args[] = {
 	/* function format               argument */
     // TODO: Have this consider if the volume is muted.
-    { run_command,  " Volume: %s |",        "~/.tedsconfigs/extras/volume.sh'"},
+    { run_command,  " Volume: %s |",        "/home/ted/.tedsconfigs/extras/volume.sh"},
     { wifi_essid,   " %s ",           "wlp0s20f3"},
     { wifi_perc,    "(%s%%) | ",     "wlp0s20f3"},
     { battery_perc, "%s%% Battery | ",       "BAT0"},
