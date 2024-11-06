@@ -98,7 +98,6 @@
     librewolf-unwrapped # browser for dealing with Dad's things
     surf # Suckless simple browser
     vim
-    neovim-unwrapped # Also a wrapped version that doesn't load the config properly
     wget
     git
     stow # dotfile manager
@@ -108,10 +107,6 @@
     unzip
     p7zip # for 7z files
     qmk # sweep/etc keyboard modification
-    wl-clipboard # wl-copy and wl-paste for copy/paste from stdin / stdout
-    mako # notification system developed by swaywm maintainer
-    swaybg # background image for sway
-    feh # background image for i3
     vlc # media player
     blueberry # Bluetooth manager
     dmenu # For launching programs in i3 and sway
@@ -120,7 +115,6 @@
     nnn # terminal file manager
     starship # terminal prompt
     fastfetch # enivornment fetch and display cli
-    mullvad-browser
     pulseaudio
     btop # terminal system monitor
     auto-cpufreq # battery life improvement
@@ -134,14 +128,8 @@
     #Hyprland recommended stuff:
     kitty
 #   st
-#   xdg-desktop-portal-hyprland
-#   wofi # Hyprland program launcher
-#   hyprpaper # Hyprland wallpaper
-    grim # screenshot functionality
-    slurp # screenshot functionality
     gimp # photo (screenshot) editing
-    waybar # Bar for wayland
-    slstatus
+    slstatus # dwm status bar
     # Programming languages
     gcc # C and C++
     lua # For nvim
@@ -227,12 +215,6 @@
 
   # Enable systemd-networkd
   #systemd.network.enable = true;
-
-  # enable sway window manager
-  programs.sway = {
-    enable = true;
-    wrapperFeatures.gtk = true;
-  };
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.

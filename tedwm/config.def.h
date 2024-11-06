@@ -66,6 +66,9 @@ static const char *audiomute[] = { "pactl", "set-sink-mute", "@DEFAULT_SINK@", "
 static const char *audiodown[] = { "pactl", "set-sink-volume", "@DEFAULT_SINK@", "-5%", NULL };
 static const char *audioup[] = { "pactl", "set-sink-volume", "@DEFAULT_SINK@", "+5%", NULL };
 
+// Screenshot:
+// import -window root ~/Pictures/$(date '+%Y%m%d-%H%M%S').png
+
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
