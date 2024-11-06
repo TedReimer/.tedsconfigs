@@ -121,7 +121,7 @@
     zoxide # cd command that learns which directories you care about
     tree # Directory tree viewer
     picom # compositor for X
-    evince # GNOME's PDF viewer
+    mupdf # pdf viewer
     texliveFull # LaTeX
     discord
     prismlauncher # Minecraft launcher (official launcher is broken for 1.19+
