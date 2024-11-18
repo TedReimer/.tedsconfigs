@@ -77,6 +77,7 @@
     description = "Ted Reimer";
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
+        fish
       #kate
     #  thunderbird
     ];
