@@ -4,8 +4,10 @@
 
 (defsrc
     caps
+    nlck
 )
 
 (deflayer default
     (tap-hold-press 200 200 esc lshift)
+    (tap-hold-press 200 200 XX nlck)
 )
