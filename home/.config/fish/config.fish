@@ -9,6 +9,10 @@ if status is-interactive
 
     eval "fastfetch --config ~/.tedsconfigs/extras/tedsfetch.jsonc"
 
+	set -x MANPAGER "vim +MANPAGER --not-a-term -"
+    set EDITOR vim
+    set SUDO_EDITOR vim
+
     set STARSHIP_CONFIG ~/.config/starship.toml
     starship init fish | source
 end

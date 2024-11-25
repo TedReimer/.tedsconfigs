@@ -107,9 +107,11 @@
     zip
     unzip
     p7zip # for 7z files
+    tldr # simpler man pages
     qmk # sweep/etc keyboard modification
     vlc # media player
     blueberry # Bluetooth manager
+    kanata # keyboard modifier
     dmenu # For launching programs in i3 and sway
     pcmanfm # File manager
 #   lf # terminal file manager
