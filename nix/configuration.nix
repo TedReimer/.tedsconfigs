@@ -75,7 +75,7 @@
   users.users.ted = {
     isNormalUser = true;
     description = "Ted Reimer";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "input" "uinput" ];
     packages = with pkgs; [
         fish
       #kate

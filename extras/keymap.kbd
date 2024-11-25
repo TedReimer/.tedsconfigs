@@ -1,0 +1,11 @@
+(defcfg
+    process-unmapped-keys yes
+)
+
+(defsrc
+    caps
+)
+
+(deflayer default
+    (tap-hold-press 200 200 esc lshift)
+)
