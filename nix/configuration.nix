@@ -127,6 +127,7 @@
     mupdf # pdf viewer
     texliveFull # LaTeX
     discord
+    openttd
     prismlauncher # Minecraft launcher (official launcher is broken for 1.19+
     #Hyprland recommended stuff:
     kitty
