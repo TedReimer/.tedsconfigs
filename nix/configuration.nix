@@ -128,6 +128,8 @@
     texliveFull # LaTeX
     discord
     openttd
+    vbam # GBA emulator
+    desmume # ds emulator
     prismlauncher # Minecraft launcher (official launcher is broken for 1.19+
     #Hyprland recommended stuff:
     kitty
