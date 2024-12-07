@@ -14,7 +14,7 @@
   system.autoUpgrade.enable = true;
   system.autoUpgrade.allowReboot = false;
 
-  networking.hostName = "tedjreimer"; # Define your hostname.
+  networking.hostName = "tedsterra"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
   # Configure network proxy if necessary
@@ -52,7 +52,6 @@
   services.printing.enable = true;
 
   # Enable sound with pipewire.
-  sound.enable = true;
   hardware.pulseaudio.enable = false;
   security.rtkit.enable = true;
   services.pipewire = {
