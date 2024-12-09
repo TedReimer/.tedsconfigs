@@ -72,7 +72,14 @@ autocmd FileType vim setlocal foldmethod=marker
 set foldcolumn=2
 
 " compile LaTeX
-autocmd BufWritePost *.tex silent! execute "!pdflatex % " | redraw!
+"autocmd BufWritePost *.tex silent! execute "!pdflatex % " | redraw!
+au BufWritePost *.tex {
+    execute "!pdflatex <afile>"
+    execute "!rm <afile>:r.log"
+    execute "!rm <afile>:r.aux"
+    execute "!mv <afile>:r.pdf pdfs"
+    redraw!
+    }
 
 " }}}
 
