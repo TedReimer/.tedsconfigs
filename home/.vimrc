@@ -77,6 +77,7 @@ au BufWritePost *.tex {
     execute "!pdflatex <afile>"
     execute "!rm <afile>:r.log"
     execute "!rm <afile>:r.aux"
+    execute "!mkdir pdfs"
     execute "!mv <afile>:r.pdf pdfs"
     redraw!
     }

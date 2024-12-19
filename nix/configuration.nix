@@ -126,6 +126,7 @@
     mupdf # pdf viewer
     texliveFull # LaTeX
     discord
+    dolphin-emu # can't get this one to work through retroarch
     openttd
     prismlauncher # Minecraft launcher (official launcher is broken for 1.19+
     #Hyprland recommended stuff:
