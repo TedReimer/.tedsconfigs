@@ -138,6 +138,7 @@
     gcc # C and C++
     lua # For nvim
     lua-language-server
+    love
     python3
     go
     gopls # Go language server
