@@ -31,9 +31,6 @@ set smartcase
 
 set showmode
 
-" Not sure why but it doesn't look right if I don't load pablo first
-colorscheme pablo
-colorscheme retrobox
 set termguicolors
 
 set showmatch
@@ -46,7 +43,24 @@ set wildignore=*.docx,*.jpg,*.jpeg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.img,*.xlsx
 
 
 " PLUGINS {{{
+
+call plug#begin()
+
+Plug 'doums/darcula'
+Plug 'ywjno/vim-tomorrow-theme'
+Plug 'itchyny/lightline.vim'
+Plug 'airblade/vim-gitgutter'
+Plug 'dense-analysis/ale'
+
+call plug#end()
+
+colorscheme Tomorrow-Night
+set laststatus=2
+set noshowmode
+let g:lightline = { 'colorscheme': 'Tomorrow_Night', }
+
 " }}}
+
 
 " MAPPINGS {{{
 
