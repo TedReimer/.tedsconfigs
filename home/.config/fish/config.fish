@@ -21,3 +21,10 @@ function v
     mupdf-x11 $argv &
     disown
 end
+
+function prnt
+    sudo mount /dev/sda1 /media/usb/
+    sudo rm /media/usb/*
+    sudo mv ~/Downloads/* /media/usb/
+    sudo umount /media/usb
+end
