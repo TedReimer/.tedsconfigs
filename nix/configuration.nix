@@ -98,6 +98,7 @@
     librewolf-unwrapped # browser for dealing with Dad's things
     surf # Suckless simple browser
     vim
+    emacs
     wget
     git
     stow # dotfile manager

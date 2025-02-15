@@ -8,6 +8,8 @@ filetype plugin on
 filetype indent on
 
 syntax on
+syntax enable
+syntax reset
 
 " Turns on relative line numbering, except current line
 set number
@@ -51,6 +53,8 @@ Plug 'ywjno/vim-tomorrow-theme'
 Plug 'itchyny/lightline.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'dense-analysis/ale'
+Plug 'ervandew/supertab'
+Plug 'ap/vim-css-color'
 
 call plug#end()
 
@@ -94,7 +98,13 @@ au BufWritePost *.tex {
     execute "!mkdir pdfs"
     execute "!mv <afile>:r.pdf pdfs"
     redraw!
-    }
+}
+
+au BufWritePost * {
+    syntax on
+    syntax enable
+    syntax reset
+}
 
 " }}}
 
