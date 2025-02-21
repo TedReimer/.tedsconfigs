@@ -8,6 +8,8 @@ filetype plugin on
 filetype indent on
 
 syntax on
+syntax enable
+syntax reset
 
 " Turns on relative line numbering, except current line
 set number
@@ -51,6 +53,8 @@ Plug 'ywjno/vim-tomorrow-theme'
 Plug 'itchyny/lightline.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'dense-analysis/ale'
+Plug 'ervandew/supertab'
+Plug 'ap/vim-css-color'
 
 call plug#end()
 
@@ -58,6 +62,8 @@ colorscheme Tomorrow-Night
 set laststatus=2
 set noshowmode
 let g:lightline = { 'colorscheme': 'Tomorrow_Night', }
+
+let g:ale_linters = {'latex': [], 'tex': []}
 
 " }}}
 
@@ -85,8 +91,8 @@ autocmd FileType vim setlocal foldmethod=marker
 " za to toggle, zo to open, zc to close. zM/zR to close/open all folds
 set foldcolumn=2
 
+au BufRead * syntax reset
 " compile LaTeX
-"autocmd BufWritePost *.tex silent! execute "!pdflatex % " | redraw!
 au BufWritePost *.tex {
     execute "!pdflatex <afile>"
     execute "!rm <afile>:r.log"

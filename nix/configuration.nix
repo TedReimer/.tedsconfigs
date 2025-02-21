@@ -164,15 +164,6 @@
       };
   };
 
-  programs.steam = {
-    enable = true;
-    # Open firewall to multiplayer features
-    remotePlay.openFirewall = true;
-    dedicatedServer.openFirewall = true;
-    
-    # platformOptimizations.enable = true; # apparently this isn't real
-  };
-
   # Fonts
   fonts.packages = with pkgs; [
     font-awesome
