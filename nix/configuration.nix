@@ -128,6 +128,8 @@
     texliveFull # LaTeX
     discord
     dolphin-emu # can't get this one to work through retroarch
+    obs-studio
+    audacity
     openttd
     prismlauncher # Minecraft launcher (official launcher is broken for 1.19+
     #Hyprland recommended stuff:

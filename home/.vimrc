@@ -33,7 +33,7 @@ set smartcase
 
 set showmode
 
-set termguicolors
+set notermguicolors
 
 set showmatch
 set hlsearch
@@ -58,10 +58,11 @@ Plug 'ap/vim-css-color'
 
 call plug#end()
 
-colorscheme Tomorrow-Night
 set laststatus=2
 set noshowmode
 let g:lightline = { 'colorscheme': 'Tomorrow_Night', }
+
+let g:ale_linters = {'latex': [], 'tex': []}
 
 " }}}
 
@@ -77,6 +78,7 @@ nnoremap <leader>fv :E<CR>
 
 nnoremap <leader><Esc> :noh<CR>
 
+nnoremap <leader>h :execute 'hi' synIDattr(synID(line("."), col("."), 1), "name")
 
 " }}}
 
@@ -100,11 +102,12 @@ au BufWritePost *.tex {
     redraw!
 }
 
-au BufWritePost * {
+au BufReadPost * {
     syntax on
     syntax enable
-    syntax reset
+    colorscheme trim
 }
+
 
 " }}}
 
