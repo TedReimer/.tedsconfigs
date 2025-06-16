@@ -14,6 +14,12 @@
   system.autoUpgrade.enable = true;
   system.autoUpgrade.allowReboot = false;
 
+  nix.gc = {
+    automatic = true;
+    randomizedDelaySec = "14m";
+    options = "--delete-older-than 30d";
+  };
+
   networking.hostName = "tedjreimer"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
@@ -111,7 +117,7 @@
     vlc # media player
     blueberry # Bluetooth manager
     kanata # keyboard modifier
-    dmenu # For launching programs in i3 and sway
+    dmenu # For launching programs
     pcmanfm # File manager
 #   lf # terminal file manager
     nnn # terminal file manager
@@ -129,7 +135,7 @@
     openttd
     vbam # GBA emulator
     desmume # ds emulator
-    prismlauncher # Minecraft launcher (official launcher is broken for 1.19+
+    prismlauncher # Minecraft launcher (official launcher is broken for 1.19+)
     #Hyprland recommended stuff:
     kitty
 #   st

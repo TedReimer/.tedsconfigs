@@ -33,7 +33,7 @@ set smartcase
 
 set showmode
 
-set termguicolors
+set notermguicolors
 
 set showmatch
 set hlsearch
@@ -55,10 +55,12 @@ Plug 'airblade/vim-gitgutter'
 Plug 'dense-analysis/ale'
 Plug 'ervandew/supertab'
 Plug 'ap/vim-css-color'
+Plug 'jeffkreeftmeijer/vim-dim'
 
 call plug#end()
 
-colorscheme Tomorrow-Night
+colorscheme trim
+" colorscheme dim
 set laststatus=2
 set noshowmode
 let g:lightline = { 'colorscheme': 'Tomorrow_Night', }
@@ -91,7 +93,11 @@ autocmd FileType vim setlocal foldmethod=marker
 " za to toggle, zo to open, zc to close. zM/zR to close/open all folds
 set foldcolumn=2
 
-au BufRead * syntax reset
+au BufRead * {
+    syntax on
+    syntax enable
+    colorscheme trim
+}
 " compile LaTeX
 au BufWritePost *.tex {
     execute "!pdflatex <afile>"
