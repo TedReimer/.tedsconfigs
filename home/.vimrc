@@ -100,7 +100,7 @@ au BufRead * {
 }
 " compile LaTeX
 au BufWritePost *.tex {
-    execute "!pdflatex <afile>"
+    execute "!lualatex <afile>"
     execute "!rm <afile>:r.log"
     execute "!rm <afile>:r.aux"
     execute "!mkdir pdfs"

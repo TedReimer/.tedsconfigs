@@ -119,6 +119,7 @@
     kanata # keyboard modifier
     dmenu # For launching programs
     pcmanfm # File manager
+    feh # Imager viewer and background image setter
 #   lf # terminal file manager
     nnn # terminal file manager
     starship # terminal prompt
