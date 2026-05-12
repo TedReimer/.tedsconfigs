@@ -15,6 +15,8 @@ if status is-interactive
 
     set STARSHIP_CONFIG ~/.config/starship.toml
     starship init fish | source
+
+    set -x TEXINPUTS .//:/home/ted/Documents/latex_styles//:
 end
 
 function v
