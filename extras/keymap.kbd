@@ -8,6 +8,6 @@
 )
 
 (deflayer default
-    (tap-hold-press 200 200 esc lshift)
+    esc
     (tap-hold-press 200 200 XX nlck)
 )

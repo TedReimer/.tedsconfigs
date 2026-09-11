@@ -58,7 +58,7 @@
   services.printing.enable = true;
 
   # Enable sound with pipewire.
-  hardware.pulseaudio.enable = false;
+  services.pulseaudio.enable = false;
   security.rtkit.enable = true;
   services.pipewire = {
     enable = true;
@@ -101,8 +101,7 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     firefox-unwrapped # The usual firefox is a wrapped version
-    librewolf-unwrapped # browser for dealing with Dad's things
-    surf # Suckless simple browser
+    #surf # Suckless simple browser
     vim
     wget
     git
@@ -120,12 +119,14 @@
     dmenu # For launching programs
     pcmanfm # File manager
     feh # Imager viewer and background image setter
+    cbonsai
 #   lf # terminal file manager
     nnn # terminal file manager
     starship # terminal prompt
     fastfetch # enivornment fetch and display cli
     pulseaudio
     btop # terminal system monitor
+    kdePackages.okular
     auto-cpufreq # battery life improvement
     zoxide # cd command that learns which directories you care about
     tree # Directory tree viewer
@@ -133,9 +134,6 @@
     mupdf # pdf viewer
     texliveFull # LaTeX
     discord
-    openttd
-    vbam # GBA emulator
-    desmume # ds emulator
     prismlauncher # Minecraft launcher (official launcher is broken for 1.19+)
     #Hyprland recommended stuff:
     kitty
@@ -174,7 +172,7 @@
   # Fonts
   fonts.packages = with pkgs; [
     font-awesome
-    nerdfonts
+    #nerd-fonts
   ];
 
   programs.firefox.enable = true;

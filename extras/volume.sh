@@ -2,7 +2,7 @@ vol="$(pactl get-sink-volume @DEFAULT_SINK@ | grep 'Volume' | awk -F'/' '{print 
 vol2="${vol:2:-1}"
 if [ "$(pactl get-sink-mute @DEFAULT_SINK@)" = "Mute: yes" ]
 then
-    echo "${vol2}(M)"
+    echo "${vol}(M)"
 else
-    echo "${vol2}"
+    echo "${vol}"
 fi

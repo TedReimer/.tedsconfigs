@@ -56,6 +56,7 @@ Plug 'dense-analysis/ale'
 Plug 'ervandew/supertab'
 Plug 'ap/vim-css-color'
 Plug 'jeffkreeftmeijer/vim-dim'
+Plug 'mbbill/undotree'
 
 call plug#end()
 
@@ -81,6 +82,34 @@ nnoremap <leader>fv :E<CR>
 
 nnoremap <leader><Esc> :noh<CR>
 
+nnoremap <leader>u :UndotreeToggle<CR>
+
+" compile LaTeX
+function! CompileLatex(cleanup)
+    let l:file = expand('%')
+    let l:base = expand('%:r')
+    let l:cmd = 'lualatex -interaction=nonstopmode ' . l:file
+
+    echo "Compiling..."
+
+    let l:Callback = {job, status -> s:OnCompileDone(status, l:base, a:cleanup)}
+    call job_start(['sh', '-c', l:cmd], {'exit_cb': l:Callback, 'out_io': 'null', 'err_io': 'null'})
+endfunction
+
+function! s:OnCompileDone(status, base, cleanup)
+    if a:status != 0
+        echohl ErrorMsg | echo "LaTeX compile FAILED (exit " . a:status . ")" | echohl None
+    else
+        if a:cleanup
+            call system('rm -f ' . a:base . '.log ' . a:base . '.aux')
+        endif
+        call system('mkdir -p pdfs && mv ' . a:base . '.pdf pdfs/')
+        echo "Compiled OK -> pdfs/" . fnamemodify(a:base, ':t') . ".pdf"
+    endif
+endfunction
+
+nnoremap <leader>cc :call CompileLatex(1)<CR>
+nnoremap <leader>c  :call CompileLatex(0)<CR>
 
 " }}}
 
@@ -98,15 +127,6 @@ au BufRead * {
     syntax enable
     colorscheme trim
 }
-" compile LaTeX
-au BufWritePost *.tex {
-    execute "!lualatex <afile>"
-    execute "!rm <afile>:r.log"
-    execute "!rm <afile>:r.aux"
-    execute "!mkdir pdfs"
-    execute "!mv <afile>:r.pdf pdfs"
-    redraw!
-    }
 
 " }}}
 

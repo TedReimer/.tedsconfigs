@@ -32,12 +32,12 @@ $line_break$character
 palette = 'teds_palette'
 
 [palettes.teds_palette]
-color_green = '#11ff99'
-color_user = '#118855'
-color_directory = '#DD5566'
-color_git = '#dd7755'
-color_language = '#6699bb'
-color_time = '#336688'
+color_green = '#b5bd68'
+color_user = '#848f22'
+color_directory = '#c33f3f'
+color_git = '#e9ae2b'
+color_language = '#858cfb'
+color_time = '#525ecd'
 
 # You can also replace your username with a neat symbol like   or disable this
 # and use the os module below
@@ -103,7 +103,7 @@ format = '[ $symbol ($version) ]($style)'
 
 [git_branch]
 symbol = ""
-style = "bg:color_git"
+style = "bg:color_git fg:#373b41"
 format = '[ $symbol $branch ]($style)'
 
 [git_status]
