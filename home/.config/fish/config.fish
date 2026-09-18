@@ -20,7 +20,7 @@ if status is-interactive
 end
 
 function v
-    mupdf-x11 $argv &
+    mupdf $argv &
     disown
 end
 

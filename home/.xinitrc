@@ -7,4 +7,8 @@ exec picom --vsync --backend glx &
 exec slstatus &
 exec go run /home/ted/Documents/programming/julia/julia.go &
 exec feh --bg-fill /home/ted/Documents/programming/julia/set.png &
+xrdb -merge ~/.Xresources
+export XCURSOR_THEME=Adwaita
+export XCURSOR_SIZE=24
+xsetroot -cursor_name left_ptr &
 exec dwm
