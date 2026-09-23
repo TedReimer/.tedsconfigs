@@ -1,7 +1,5 @@
-home/.config/gh/
-home/.config/go/
-home/.config/discord/
-home/.config/btop/
-home/.config/pulse/
-home/.config/dconf/
-home/.config/gtk-3.0/
+home/.config/*
+!home/.config/fish
+!home/.config/fish/**
+!home/.config/kitty
+!home/.config/kitty/**

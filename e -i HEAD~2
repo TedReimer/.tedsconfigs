@@ -1,0 +1,197 @@
+[33mcommit bbd55e1330cc5f404251923729541a1d6846d5b4[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: Ted J. Reimer <tedjreimer@gmail.com>
+Date:   Wed Sep 23 13:10:08 2026 -0500
+
+    stopped tracking lots of stuff
+
+[33mcommit 95f088b633256e8b199f93cca1f3dea718e1abe6[m
+Author: Ted J. Reimer <tedjreimer@gmail.com>
+Date:   Wed Sep 23 13:04:47 2026 -0500
+
+    Fixed the volume
+
+[33mcommit d014a02672fcb3268c770839b9c1689dc5fd99d2[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Ted J. Reimer <tedjreimer@gmail.com>
+Date:   Fri Sep 18 14:49:31 2026 -0500
+
+    Fixed git status color
+
+[33mcommit ddd40679d957a0fe65193c78b6151d694f671453[m
+Author: Ted J. Reimer <tedjreimer@gmail.com>
+Date:   Fri Sep 18 14:34:46 2026 -0500
+
+    Fixed the fonts
+
+[33mcommit 0a3d5ed68da9056f6cd9574bfa4c63ad83580222[m
+Author: Ted J. Reimer <tedjreimer@gmail.com>
+Date:   Fri Sep 18 10:05:10 2026 -0500
+
+    Bigger font
+
+[33mcommit d1c7b728ae7b2247e206e97f329b6db306800cc1[m
+Author: Ted J. Reimer <tedjreimer@gmail.com>
+Date:   Fri Sep 18 10:00:46 2026 -0500
+
+    fixing?
+
+[33mcommit 10b312768b31f90976dcc4f730005c2f704cace9[m
+Author: Ted <tedjreimer@gmail.com>
+Date:   Fri Sep 11 15:18:42 2026 -0500
+
+    A bunch of stuff, idk, it's been a while
+
+[33mcommit 60821c62271d98358a8eac78ce54af6d074449f3[m
+Author: Ted <tedjreimer@gmail.com>
+Date:   Tue May 12 12:37:12 2026 -0500
+
+    added TEXINPUTS to avoid having to use symlinks all the time
+
+[33mcommit c788d2dd243c712345f0e4decbe524b85b66e8d4[m
+Author: Ted <tedjreimer@gmail.com>
+Date:   Sun Jun 29 15:12:49 2025 -0500
+
+    Added feh for image viewing and switch from pdflatex to lualatex in the vim autocompile
+
+[33mcommit d40c701ec2f2371473ce615ea5ef0d162e1a57a4[m
+Author: Ted <tedjreimer@gmail.com>
+Date:   Mon Jun 16 13:38:11 2025 -0500
+
+    colorsacheming
+
+[33mcommit c70b55365ef7b72e7ec3668943c35219f790cb17[m
+Author: Ted <tedjreimer@gmail.com>
+Date:   Fri Feb 21 14:34:48 2025 -0600
+
+    Removed steam, changed the way TeX gets generated, made syntax highlighting work properly, and removed the droplet sound
+
+[33mcommit 0082042a2a551c1896ec03f563bea49711a1f2ba[m
+Author: Ted <tedjreimer@gmail.com>
+Date:   Tue Feb 4 17:53:00 2025 -0600
+
+    Removed sound option as required by Nix
+
+[33mcommit 0d534e17ef04aff7eeca29756cd529a9a7779814[m
+Author: Ted <tedjreimer@gmail.com>
+Date:   Tue Jan 28 11:25:48 2025 -0600
+
+    Added alias for fast printing
+
+[33mcommit 0f56499721113c7d4db19768f7aeec3fcb1597bd[m
+Author: Ted <tedjreimer@gmail.com>
+Date:   Fri Jan 24 11:59:17 2025 -0600
+
+    vim parity
+
+[33mcommit 9fc5ac68288be558009cfc7cd4c3eea93ca50e3a[m
+Author: Ted <tedjreimer@gmail.com>
+Date:   Mon Dec 2 22:21:50 2024 -0600
+
+    Added DS and GBA emulators
+
+[33mcommit 08b6da73704815f538bd5ab709aa941c749b38c6[m
+Author: Ted <tedjreimer@gmail.com>
+Date:   Sun Dec 1 19:50:49 2024 -0600
+
+    Added support for my second monitor
+
+[33mcommit 77dd192b1e4ac057c5b5a3802bda9879e21cbd2d[m
+Author: Ted <tedjreimer@gmail.com>
+Date:   Sun Nov 24 22:47:52 2024 -0600
+
+    Make the numlock key do nothing unless pressed and held, then acts as normal. I would remove it entirely but it sometimes doesn't turn on automatically
+
+[33mcommit 01da69a01532e998bbe7ae1430845e640e376dfd[m
+Author: Ted <tedjreimer@gmail.com>
+Date:   Sun Nov 24 22:36:33 2024 -0600
+
+    Initial configuration of kanata. Currently it starts in the background when the X server does, I'll probably want to make this a systemd service eventually so it'll work in the tty.
+
+[33mcommit a1ce252093f022567307d729042c57981ffc2e85[m
+Author: Ted <tedjreimer@gmail.com>
+Date:   Sun Nov 24 21:37:06 2024 -0600
+
+    Officially changed to manpager and editor/sudeditor to vim, added tldr for better manpages and kanata for keyboard customization (removing caps lock mostly)
+
+[33mcommit 054fb90221448a03bb35c21fe9ac47d1e5ffe816[m
+Author: Ted <tedjreimer@gmail.com>
+Date:   Mon Nov 18 23:05:03 2024 -0600
+
+    Updated fish config to open pdfs from the command line and auto-disown the task, allowing you to close the terminal emulator and still view the pdf
+
+[33mcommit 36ec68838c79e7226c273d2b00e019cea8f7c202[m
+Author: Ted <tedjreimer@gmail.com>
+Date:   Mon Nov 18 22:44:07 2024 -0600
+
+    Removed an unnecessary blank file
+
+[33mcommit 8bc9dc80ce75cc2122eac648b8cdd58698141c28[m
+Author: Ted <tedjreimer@gmail.com>
+Date:   Sun Nov 17 23:28:25 2024 -0600
+
+    Moved my user shell to fish and made the necessary additions for that
+
+[33mcommit 0f26ec6e380c70fea0ad23242ad9e468841f11b7[m
+Author: Ted <tedjreimer@gmail.com>
+Date:   Fri Nov 8 16:16:35 2024 -0600
+
+    Removed automatic screen timeout and screensaver via xinitrc
+
+[33mcommit 46c5ffa8e75f6a00ce21f8451b252bb39881e325[m
+Author: Ted <tedjreimer@gmail.com>
+Date:   Wed Nov 6 23:59:45 2024 -0600
+
+    Changed the dwm focussed color to match the sway one and the one from the terminal cursor
+
+[33mcommit 4b8b06545878ce162ef341bc1be969db9b4ce712[m
+Author: Ted <tedjreimer@gmail.com>
+Date:   Wed Nov 6 09:36:41 2024 -0600
+
+    Switched evince for mupdf and added an alias for it
+
+[33mcommit 03330640001f2a488ff1de758583ba6afd7c8429[m
+Author: Ted <tedjreimer@gmail.com>
+Date:   Tue Nov 5 22:52:03 2024 -0600
+
+    Changed slstatus refresh rate to 0.1 seconds instead of 1 second
+
+[33mcommit b4f792df13816a443a0163f785f3b4f7e1e3deef[m
+Author: Ted <tedjreimer@gmail.com>
+Date:   Tue Nov 5 21:53:53 2024 -0600
+
+    Fixed the volume display
+
+[33mcommit d10700a311d72ec35a9a3aef87818183826e4961[m
+Author: Ted <tedjreimer@gmail.com>
+Date:   Tue Nov 5 21:48:54 2024 -0600
+
+    Moved off wayland fully, updated the slstatus bar to indicate mutes, other basic customization
+
+[33mcommit 1efd0c0a2346ce8d3eb6d0a67a657fd3bfc67a2a[m
+Author: Ted <tedjreimer@gmail.com>
+Date:   Wed Oct 23 09:34:45 2024 -0500
+
+    Moved my xinitrc into the repo
+
+[33mcommit 9997758f5a3500e88b38311a50474e688ddd589b[m
+Author: Ted <tedjreimer@gmail.com>
+Date:   Wed Oct 23 09:24:23 2024 -0500
+
+    Removed an autogenerated 'result' directory from nix
+
+[33mcommit 1f1bc4c9563bd7f9a27d1acbdee19e23b22a77d3[m
+Author: Ted <tedjreimer@gmail.com>
+Date:   Wed Oct 23 09:23:25 2024 -0500
+
+    Added dwm and slstatus and did some basic configuring. Sway is currently broken, but I'll probably end up removing it anyway.
+
+[33mcommit 5c057681945d16c93a433626f373d3abffdf723d[m
+Author: Ted <tedjreimer@gmail.com>
+Date:   Mon Oct 7 09:45:49 2024 -0500
+
+    Removed the autoReboot feature
+
+[33mcommit 1ca598fb847cdc8469b13d7e9e903e5349900c85[m
+Author: Ted <tedjreimer@gmail.com>
+Date:   Sun Oct 6 22:20:21 2024 -0500
+
+    Moved all of my configs here
