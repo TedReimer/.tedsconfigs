@@ -1,7 +1,15 @@
-vol="$(pactl get-sink-volume @DEFAULT_SINK@ | grep 'Volume' | awk -F'/' '{print $2}')"
-vol2="${vol:2:-1}"
-if [ "$(pactl get-sink-mute @DEFAULT_SINK@)" = "Mute: yes" ]
-then
+#!/bin/bash
+# Prints the current Master volume as "##%" or "##%(M)" if muted.
+
+output=$(amixer sget Master)
+
+# Extract the first percentage value, e.g. "72%"
+vol=$(echo "$output" | grep -oP '\d+%' | head -n1)
+
+# Extract mute status: [on] or [off] appears after the percentage
+mute_status=$(echo "$output" | grep -oP '\[(on|off)\]' | head -n1)
+
+if [ "$mute_status" = "[off]" ]; then
     echo "${vol}(M)"
 else
     echo "${vol}"
